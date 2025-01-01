@@ -1,0 +1,1 @@
+web: java -jar target/web1-0.0.1-SNAPSHOT.war

@@ -21,7 +21,7 @@ WORKDIR /usr/local/tomcat/webapps
 COPY target/web1-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
 # Exponha a porta 8080
-EXPOSE 8080
+EXPOSE 8085
 
 # Comando para rodar o Tomcat
  CMD ["/usr/local/tomcat/bin/catalina.sh", "run"] 

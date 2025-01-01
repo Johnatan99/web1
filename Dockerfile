@@ -24,4 +24,4 @@ COPY target/web1-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080
 
 # Comando para rodar o Tomcat
- CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
+ CMD ["/usr/local/tomcat/bin/catalina.sh", "run"] 

@@ -20,10 +20,12 @@ WORKDIR /usr/local/tomcat/webapps
 # Copie o arquivo WAR para o Tomcat (certifique-se de que o WAR esteja na pasta target)
 COPY target/web1-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
+
 # Exponha a porta 8080
 EXPOSE 8085
 
-
+# Modificar o arquivo server.xml para usar a porta 8085 (opcional, veja se já está configurado corretamente)
+RUN sed -i 's/8080/8085/g' /usr/local/tomcat/conf/server.xml
 
 # Comando para rodar o Tomcat
  CMD ["/usr/local/tomcat/bin/catalina.sh", "run"] 

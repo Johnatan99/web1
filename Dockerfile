@@ -26,7 +26,7 @@ COPY target/web1-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
 
 # Exponha a porta 8080
-EXPOSE 8085
+EXPOSE 8080
 
 # Modificar o arquivo server.xml para usar a porta 8085 (opcional, veja se já está configurado corretamente)
 #RUN sed -i 's/8080/8085/g' /usr/local/tomcat/conf/server.xml
